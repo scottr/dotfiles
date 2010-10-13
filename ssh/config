@@ -1,0 +1,49 @@
+ForwardAgent yes
+ServerAliveInterval 60
+
+Host drop.maemo.org
+	HostName drop.maemo.org
+	User scottrnz
+
+Host voodoo
+	Hostname voodoo.cs.waikato.ac.nz
+	User smr26
+
+Host gtw
+	Hostname gtw.crc.net.nz
+	User smr26
+
+Host peon
+	Hostname peon.crc.net.nz
+	User smr26
+
+Host mugen
+	Hostname 10.1.50.3
+	User scottr
+
+Host spectre
+	Hostname spectre.cs.waikato.ac.nz
+	User smr26
+
+Host scottr
+	Hostname scottr.co.nz
+
+Host trove
+	Hostname trove.meta.net.nz
+	User scottr
+
+Host hereford
+	Hostname hereford.crc.net.nz
+	User smr26
+
+Host jin
+	Hostname 10.1.50.254
+	user root
+
+Host wagyu
+	Hostname wagyu.lightwire.co.nz
+	user smr26
+
+Host wagyuvm
+	Hostname 10.1.18.238
+	user smr26
