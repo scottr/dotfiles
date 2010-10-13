@@ -1,0 +1,56 @@
+" Some default settings,
+" which can be overridded in the FileType
+" specific sections below
+
+filetype plugin on
+
+set tabstop=8
+set shiftwidth=8
+set softtabstop=8
+set nowrap
+set formatoptions-=t
+set textwidth=79
+set background=dark
+syntax on
+set incsearch
+set hlsearch
+set title
+set wildmode=list:longest
+" Hit F5 before and after pasting to a terminal-based VIM in order to stop it
+" from auto-indenting and stuffing things up.
+nnoremap <F5> :set invpaste?<Enter>
+imap <F5> <C-O><F5>
+set pastetoggle=<F5>
+
+" Hit Q to reflow current paragraph
+nnoremap Q gqap
+" Hit Q to reflow visually selected lines
+vnoremap Q gq
+
+filetype indent on
+
+" Define a new filetype for human readable files
+augroup filetype
+	autocmd BufNewFile,BufRead *.txt set filetype=human
+augroup END
+
+" Ensure human readable "*.txt" files do auto line wrapping
+" at a textwidth of 72 characters.
+autocmd FileType human set wrap formatoptions+=t textwidth=72
+autocmd FileType svn set wrap formatoptions+=t textwidth=72
+autocmd FileType tex set wrap formatoptions+=t textwidth=72
+
+" For C, C++ files, autoindent using tabs (with default shiftwidth)
+autocmd FileType c,cpp set cindent noexpandtab
+
+" For Python files, expand tabs to spaces and use smartindent
+autocmd FileType python set expandtab autoindent smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+
+" Latex-Suite settings
+" TODO: Automatically define viewers for Mac OS and Linux
+" let g:tex_flavor='latex'
+" let g:Tex_ViewRuleComplete_pdf = 'open $*.pdf'
+" let g:Tex_CompileRule_pdf = 'dvipdf $*.dvi'
+" let g:Tex_FormatDependency_pdf = 'dvi,pdf'
+" let g:Tex_DefaultTargetFormat = 'pdf'
+

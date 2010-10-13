@@ -1,0 +1,8 @@
+[color]
+	log = true
+	diff = true
+	ui = true
+
+[user]
+	name = Scott Raynel
+	email = scottraynel@gmail.com

@@ -1,0 +1,6 @@
+ln -s dotfiles/vim .vim
+ln -s dotfiles/vim/vimrc .vimrc
+ln -s dotfiles/gitconfig .gitconfig
+ln -s dotfiles/ssh/config .ssh/config
+ln -s dotfiles/ssh/authorized_keys .ssh/authorized_keys
+
