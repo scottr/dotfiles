@@ -47,3 +47,25 @@ Host wagyu
 Host wagyuvm
 	Hostname 10.1.18.238
 	user smr26
+
+Host ac-bop
+	Hostname 27.96.67.139
+	user root
+
+Host herens
+	Hostname herens.rurallink.co.nz
+	user smr26
+
+Host squalor
+	Hostname squalor.crc.net.nz
+	user smr26
+
+Host tol-acct
+	Hostname tol-acct.rurallink.co.nz
+	user smr26
+
+Host bob
+	Hostname bob.rurallink.co.nz
+	User smr26
+
+
